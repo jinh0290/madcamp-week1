@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\madcamp_week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
+            "outputFile": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\081958b85be993b26123dd5b1125e07f\\material-1.1.0\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
