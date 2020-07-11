@@ -1,28 +1,39 @@
 package com.example.tabswithanimatedswipe;
 
+import android.Manifest;
+import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.provider.ContactsContract;
+import android.provider.Settings;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -30,22 +41,43 @@ import java.util.List;
 // Instances of this class are fragments representing a single
 // object in our collection.
 public class ObjectFragment1 extends Fragment implements TextWatcher {
+    private static final int MY_PERMISSION_STORAGE = 1111;
+
     RecyclerView recyclerView;
     EditText editText;
     MyAdapter mAdapter;
     RecyclerView.LayoutManager layoutManager;
     private List<Contact> ContactList;
+    Button button_contact;
+    Button button_clearing;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_object1, container, false);
+        View view = inflater.inflate(R.layout.fragment_object1, container, false);
+        button_contact = view.findViewById(R.id.get_contacts_button);
+        button_contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContacts();
+            }
+        });
+        button_clearing = view.findViewById(R.id.clearing_button);
+        button_clearing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ContactList.clear();
+                mAdapter.notifyDataSetChanged();
+            }
+        });
+
+        return view;
     }
 
     @Override
     public void onViewCreated (@NonNull View view, @Nullable Bundle savedInstanceState) {
-        ContactList = getContacts(getActivity());
+        ContactList = new ArrayList<>();
 
         editText = view.findViewById(R.id.searchBox);
         editText.addTextChangedListener(this);
@@ -154,6 +186,8 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
         }
     }
 
+
+    /* Below 3 functions are called by TextChangedListener */
     @Override
     public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
@@ -169,7 +203,11 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
 
     }
 
-    public List<Contact> getContacts(Context context) {
+    public void setContacts() {
+        checkPermission();
+    }
+
+    private void getContacts(Context context) {
         // 데이터베이스 혹은 content resolver 를 통해 가져온 데이터를 적재할 저장소를 먼저 정의
         List<Contact> datas = new ArrayList<>();
         // 1. Resolver 가져오기(데이터베이스 열어주기)
@@ -212,7 +250,78 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
         // 데이터 계열은 반드시 닫아줘야 한다.
         cursor.close();
         Collections.sort(datas);
-        return datas;
+        ContactList.addAll(datas);
+        mAdapter.notifyDataSetChanged();
     }
+
+    private void checkPermission() {
+        if (ContextCompat.checkSelfPermission(getActivity(),
+                Manifest.permission.READ_CONTACTS)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            // Permission is not granted
+            // Should we show an explanation?
+            if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
+                    Manifest.permission.READ_CONTACTS)) {
+                // Show an explanation to the user *asynchronously* -- don't block
+                // this thread waiting for the user's response! After the user
+                // sees the explanation, try again to request the permission.
+                new AlertDialog.Builder(getActivity())
+                        .setTitle("알림")
+                        .setMessage("저장소 권한이 거부되었습니다. 사용을 원하시면 설정에서 해당 권한을 직접 허용하셔야 합니다.")
+                        .setNeutralButton("설정", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                                intent.setData(Uri.parse("package:" + getActivity().getPackageName()));
+                                startActivity(intent);
+                                Toast.makeText(getActivity(), "연락처 권한을 활성화 하셔야 합니다.", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                Toast.makeText(getActivity(), "연락처 권한을 활성화 하셔야 합니다.", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .setCancelable(false)
+                        .create()
+                        .show();
+            } else {
+                // No explanation needed; request the permission
+                ActivityCompat.requestPermissions(getActivity(),
+                        new String[]{Manifest.permission.READ_CONTACTS},
+                        MY_PERMISSION_STORAGE);
+                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+            }
+        } else {
+            getContacts(getActivity());
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String[] permissions, int[] grantResults) {
+        switch (requestCode) {
+            case MY_PERMISSION_STORAGE: {
+                // If request is cancelled, the result arrays are empty.
+                // grantResults[] : 허용된 권한은 0, 거부한 권한은 -1
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // permission was granted, yay! Do the
+                    // contacts-related task you need to do.
+                    getContacts(getActivity());
+                } else {
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                }
+            }
+            // other 'case' lines to check for other
+            // permissions this app might request.
+        }
+    }
+
 
 }

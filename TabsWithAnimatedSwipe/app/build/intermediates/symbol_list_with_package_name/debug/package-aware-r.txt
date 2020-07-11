@@ -1469,6 +1469,7 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
+id button_constraint_layout
 id cancel_action
 id cancel_button
 id center
@@ -1481,6 +1482,7 @@ id chip
 id chip_group
 id chronometer
 id clear_text
+id clearing_button
 id clip_horizontal
 id clip_vertical
 id collapseActionView
@@ -1522,6 +1524,7 @@ id filter_chip
 id fitToContents
 id fixed
 id forever
+id get_contacts_button
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1878,10 +1881,12 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string clearing_button_string
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string get_contacts_button_string
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
