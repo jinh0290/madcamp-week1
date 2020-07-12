@@ -5,4 +5,11 @@
     <string name="search_box_hint">찾고 싶은 이름을 입력해보렴</string>
     <string name="get_contacts_button_string">연락처 불러오기</string>
     <string name="clearing_button_string">목록 비우기</string>
+    <string name="name_hint_string">이름</string>
+    <string name="phone_number_hint_string">연락처(ex. 010-1234-5678)</string>
+    <string name="addition_dialog_title_string">연락처 추가</string>
+    <string name="dialog_positive_button_string">추가</string>
+    <string name="dialog_negative_button_string">취소</string>
+    <string name="edition_dialog_title_string">연락처 편집</string>
+    <string name="edition_dialog_positive_button_string">확인</string>
 </resources>

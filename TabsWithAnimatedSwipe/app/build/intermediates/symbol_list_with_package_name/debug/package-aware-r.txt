@@ -45,6 +45,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array item_selected_dialog
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1338,6 +1339,8 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable bonobono
 drawable bonobono2
+drawable bonobono_green
+drawable bonobono_pink
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1353,6 +1356,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_baseline_add_24
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
@@ -1459,6 +1463,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addition_fab
 id alertTitle
 id all
 id always
@@ -1503,6 +1508,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id dialog_button
+id dialog_title
 id dimensions
 id direct
 id disableHome
@@ -1581,6 +1587,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
 id my_recycler_view
+id name
 id navigation_header_container
 id never
 id noScroll
@@ -1601,6 +1608,7 @@ id parent_matrix
 id password_toggle
 id peekHeight
 id percent
+id phone_number
 id pin
 id progress_circular
 id progress_horizontal
@@ -1779,6 +1787,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_addcontact
+layout dialog_editcontact
 layout fragment_blank
 layout fragment_object1
 layout fragment_object2
@@ -1873,6 +1883,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string addition_dialog_title_string
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -1882,6 +1893,10 @@ string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
 string clearing_button_string
+string dialog_negative_button_string
+string dialog_positive_button_string
+string edition_dialog_positive_button_string
+string edition_dialog_title_string
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -1924,11 +1939,13 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string name_hint_string
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string phone_number_hint_string
 string search_box_hint
 string search_menu_title
 string status_bar_notification_info_overflow

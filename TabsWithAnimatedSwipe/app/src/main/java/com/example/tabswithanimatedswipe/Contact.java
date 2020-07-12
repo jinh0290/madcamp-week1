@@ -6,7 +6,6 @@ public class Contact implements Comparable<Contact> {
     private String telNum; // telephone number of that person
     /* private Uri thumbNail; // Uri for thumbnail image */
 
-    /*
     public Contact(String name, String telNum) {
         this.name = name;
         this.telNum = telNum;
@@ -16,7 +15,16 @@ public class Contact implements Comparable<Contact> {
         this.name = "홍길동";
         this.telNum = "010-1234-5678";
     }
-    */
+
+    @Override
+    public boolean equals(Object o) {
+        boolean result = false;
+        Contact contact = (Contact) o;
+        if(name.equals(contact.getName()) && telNum.equals(contact.getTelNum()))
+            result = true;
+        return result;
+    }
+
     @Override
     public int compareTo(Contact contact) {
 

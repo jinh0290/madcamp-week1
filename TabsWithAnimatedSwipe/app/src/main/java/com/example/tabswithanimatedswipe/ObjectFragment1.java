@@ -33,7 +33,8 @@ import android.widget.Filterable;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -50,20 +51,22 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
     private List<Contact> ContactList;
     Button button_contact;
     Button button_clearing;
+    FloatingActionButton fab_add;
+    View fragmentView;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_object1, container, false);
-        button_contact = view.findViewById(R.id.get_contacts_button);
+        fragmentView = inflater.inflate(R.layout.fragment_object1, container, false);
+        button_contact = fragmentView.findViewById(R.id.get_contacts_button);
         button_contact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setContacts();
             }
         });
-        button_clearing = view.findViewById(R.id.clearing_button);
+        button_clearing = fragmentView.findViewById(R.id.clearing_button);
         button_clearing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,8 +74,15 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
                 mAdapter.notifyDataSetChanged();
             }
         });
+        fab_add = fragmentView.findViewById(R.id.addition_fab);
+        fab_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                createAdditionDialog();
+            }
+        });
 
-        return view;
+        return fragmentView;
     }
 
     @Override
@@ -114,6 +124,32 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
 
                 name_view = v.findViewById(R.id.textView_name);
                 telNum_view = v.findViewById(R.id.textView_telNum);
+                v.setOnClickListener(new View.OnClickListener() { // RecyclerView 내의 아이템을 클릭했을 때 무슨 일을 할 지 정해주는 리스너 생성 후 연결
+                    @Override
+                    public void onClick(View v) { // 아이템 클릭 할 때 무엇을 할 지 정하기; 여기 너무 더럽다
+                        int pos = getAdapterPosition(); // 몇 번째 아이템이었는지 위치 찾기
+                        if (pos != RecyclerView.NO_POSITION) {
+                            // TODO : use pos.
+                            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity()); // 아이템 클릭 했을 때 띄울 대화상자 만들기
+                            builder.setItems(R.array.item_selected_dialog, new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    switch (i) {
+                                        // when clicked edit button; 편집 버튼 눌렀을 때
+                                        case 0:
+                                            createEditionDialog(pos);
+                                            break;
+                                        // when clicked delete button; 삭제하기 눌렀을 때
+                                        case 1:
+                                            ContactList.remove(pos); // 정렬된 리스트에서 삭제할 때에는 다시 정렬할 필요 없음
+                                            mAdapter.notifyDataSetChanged();
+                                            break;
+                                    }
+                                }
+                            }).show();
+                        }
+                    }
+                });
             }
 
             private void onBind(Contact contact) {
@@ -186,7 +222,6 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
         }
     }
 
-
     /* Below 3 functions are called by TextChangedListener */
     @Override
     public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -249,8 +284,10 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
         }
         // 데이터 계열은 반드시 닫아줘야 한다.
         cursor.close();
-        Collections.sort(datas);
-        ContactList.addAll(datas);
+        for (Contact c : datas)
+            if(!ContactList.contains(c))
+                ContactList.add(c);
+        Collections.sort(ContactList);
         mAdapter.notifyDataSetChanged();
     }
 
@@ -299,6 +336,96 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
         } else {
             getContacts(getActivity());
         }
+    }
+
+    private void createAdditionDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        LayoutInflater inflater = requireActivity().getLayoutInflater();
+
+        // Inflate and set the layout for the dialog
+        // Pass null as the parent view because its going in the dialog layout
+        View dialog_layout = inflater.inflate(R.layout.dialog_addcontact, null);
+        builder.setView(dialog_layout)
+        // Add action buttons
+                .setPositiveButton(R.string.dialog_positive_button_string, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // add Contatct to ContactList
+                        EditText editText_name = dialog_layout.findViewById(R.id.name);
+                        EditText editText_phoneNum = dialog_layout.findViewById(R.id.phone_number);
+
+                        String name = editText_name.getText().toString();
+                        String phoneNum = editText_phoneNum.getText().toString();
+
+                        if (name.isEmpty() || phoneNum.isEmpty() ) {
+                            Toast.makeText(getActivity(), "정보를 모두 입력해 주세요.", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+                        Contact contact = new Contact(name, phoneNum);
+                        if (ContactList.contains(contact)) {
+                            Toast.makeText(getActivity(), "이미 동일한 연락처가 존재합니다.", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+                        ContactList.add(contact);
+                        Collections.sort(ContactList);
+                        mAdapter.notifyDataSetChanged();
+                    }
+                })
+                .setNegativeButton(R.string.dialog_negative_button_string, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // do nothing
+                    }
+                })
+                .setCancelable(false)
+                .create()
+                .show();
+    }
+
+    private void createEditionDialog(int pos) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        LayoutInflater inflater = requireActivity().getLayoutInflater();
+
+        View dialog_layout = inflater.inflate(R.layout.dialog_editcontact, null);
+        EditText editText_name = dialog_layout.findViewById(R.id.name);
+        EditText editText_phoneNum = dialog_layout.findViewById(R.id.phone_number);
+        editText_name.setText(ContactList.get(pos).getName());
+        editText_phoneNum.setText(ContactList.get(pos).getTelNum());
+
+        builder.setView(dialog_layout)
+                // 확인 버튼 추가
+                .setPositiveButton(R.string.edition_dialog_positive_button_string, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // edit Contatct on the position 'pos'
+                        String name = editText_name.getText().toString();
+                        String phoneNum = editText_phoneNum.getText().toString();
+
+                        if (name.isEmpty() || phoneNum.isEmpty() ) {
+                            Toast.makeText(getActivity(), "정보를 모두 입력해 주세요.", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+                        Contact contact = new Contact(name, phoneNum);
+                        if (ContactList.contains(contact)) {
+                            Toast.makeText(getActivity(), "이미 동일한 연락처가 존재합니다.", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+                        ContactList.remove(pos);
+                        ContactList.add(contact);
+                        Collections.sort(ContactList);
+                        mAdapter.notifyDataSetChanged();
+                    }
+                })
+                // 취소 버튼 추가
+                .setNegativeButton(R.string.dialog_negative_button_string, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // do nothing
+                    }
+                })
+                .setCancelable(false)
+                .create()
+                .show();
     }
 
     @Override
