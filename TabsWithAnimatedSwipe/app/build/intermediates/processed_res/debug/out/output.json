@@ -21,7 +21,7 @@
       "properties": {
         "packageId": "com.example.tabswithanimatedswipe",
         "split": "",
-        "minSdkVersion": "17"
+        "minSdkVersion": "23"
       }
     }
   ]
