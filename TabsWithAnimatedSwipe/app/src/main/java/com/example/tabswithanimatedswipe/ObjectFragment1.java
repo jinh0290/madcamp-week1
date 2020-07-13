@@ -8,6 +8,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.OvalShape;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -20,6 +26,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.provider.ContactsContract;
+import android.provider.MediaStore;
 import android.provider.Settings;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -30,22 +37,29 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Filter;
 import android.widget.Filterable;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import static android.app.Activity.RESULT_CANCELED;
+import static android.app.Activity.RESULT_OK;
+
 // Instances of this class are fragments representing a single
 // object in our collection.
 public class ObjectFragment1 extends Fragment implements TextWatcher {
-    private static final int MY_PERMISSION_STORAGE = 1111;
+    private static final int MY_PERMISSION_CONTACT = 1111;
+    private static final int MY_PERMISSION_EXTERNAL_READ = 2222;
+    private static final int REQUESTCODE_GALLERY = 111;
 
     RecyclerView recyclerView;
-    EditText editText;
+    EditText editTextSearchBox;
     MyAdapter mAdapter;
     RecyclerView.LayoutManager layoutManager;
     private List<Contact> ContactList;
@@ -53,6 +67,7 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
     Button button_clearing;
     FloatingActionButton fab_add;
     View fragmentView;
+    private int targetPos;
 
     @Nullable
     @Override
@@ -89,8 +104,8 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
     public void onViewCreated (@NonNull View view, @Nullable Bundle savedInstanceState) {
         ContactList = new ArrayList<>();
 
-        editText = view.findViewById(R.id.searchBox);
-        editText.addTextChangedListener(this);
+        editTextSearchBox = view.findViewById(R.id.searchBox);
+        editTextSearchBox.addTextChangedListener(this);
         recyclerView = view.findViewById(R.id.my_recycler_view);
 
         // use this setting to improve performance if you know that changes
@@ -118,12 +133,44 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
             // each data item is just a string in this case
             private TextView name_view;
             private TextView telNum_view;
+            private ImageButton imageButton;
 
             public MyViewHolder(View v) {
                 super(v);
 
                 name_view = v.findViewById(R.id.textView_name);
                 telNum_view = v.findViewById(R.id.textView_telNum);
+                imageButton = v.findViewById(R.id.imageButton_listitem);
+                imageButton.setBackground(new ShapeDrawable(new OvalShape()));
+                imageButton.setClipToOutline(true);
+                imageButton.setOnClickListener(new View.OnClickListener() { // 프로필사진을 클릭했을 때 무슨 일을 할 지 정해주는 리스너 생성 후 연결
+                    // 프로필사진을 클릭하면 무슨 일이 일어날 지 정하기
+                    @Override
+                    public void onClick(View view) {
+                        int pos = getAdapterPosition(); // 몇 번째 아이템이었는지 위치 찾기
+                        if (pos != RecyclerView.NO_POSITION) {
+                            // TODO : use pos.
+                            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity()); // 아이템 클릭 했을 때 띄울 대화상자 만들기
+                            builder.setItems(R.array.photo_selected_dialog, new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    switch (i) {
+                                        // 갤러리에서 불러오기 눌렀을 때
+                                        case 0:
+                                            targetPos = pos;
+                                            checkExternalReadPermission();
+                                            break;
+                                        // 삭제하기 눌렀을 때
+                                        case 1:
+                                            ContactList.get(pos).setProfile(getResources().getDrawable(R.drawable.ic_baseline_account_circle_48));
+                                            mAdapter.notifyDataSetChanged();
+                                            break;
+                                    }
+                                }
+                            }).show();
+                        }
+                    }
+                });
                 v.setOnClickListener(new View.OnClickListener() { // RecyclerView 내의 아이템을 클릭했을 때 무슨 일을 할 지 정해주는 리스너 생성 후 연결
                     @Override
                     public void onClick(View v) { // 아이템 클릭 할 때 무엇을 할 지 정하기; 여기 너무 더럽다
@@ -135,12 +182,17 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
                                     switch (i) {
-                                        // when clicked edit button; 편집 버튼 눌렀을 때
+                                        // 전화 걸기 버튼 눌렀을 때
                                         case 0:
+                                            String telNum = ContactList.get(pos).getTelNum();
+                                            dialPhoneNumber(telNum);
+                                            break;
+                                        // when clicked edit button; 편집 버튼 눌렀을 때
+                                        case 1:
                                             createEditionDialog(pos);
                                             break;
                                         // when clicked delete button; 삭제하기 눌렀을 때
-                                        case 1:
+                                        case 2:
                                             ContactList.remove(pos); // 정렬된 리스트에서 삭제할 때에는 다시 정렬할 필요 없음
                                             mAdapter.notifyDataSetChanged();
                                             break;
@@ -155,6 +207,8 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
             private void onBind(Contact contact) {
                 name_view.setText(contact.getName());
                 telNum_view.setText(contact.getTelNum());
+                if(!contact.isProfileEmpty())
+                    imageButton.setImageDrawable(contact.getProfile());
             }
         }
 
@@ -239,7 +293,7 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
     }
 
     public void setContacts() {
-        checkPermission();
+        checkContactPermission();
     }
 
     private void getContacts(Context context) {
@@ -279,6 +333,7 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
                 contact.setId(id);
                 contact.setName(name);
                 contact.setTelNum(number);
+                contact.setProfile(getResources().getDrawable(R.drawable.ic_baseline_account_circle_48));
                 datas.add(contact);
             }
         }
@@ -291,7 +346,7 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
         mAdapter.notifyDataSetChanged();
     }
 
-    private void checkPermission() {
+    private void checkContactPermission() {
         if (ContextCompat.checkSelfPermission(getActivity(),
                 Manifest.permission.READ_CONTACTS)
                 != PackageManager.PERMISSION_GRANTED) {
@@ -328,13 +383,64 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
                 // No explanation needed; request the permission
                 ActivityCompat.requestPermissions(getActivity(),
                         new String[]{Manifest.permission.READ_CONTACTS},
-                        MY_PERMISSION_STORAGE);
+                        MY_PERMISSION_CONTACT);
                 // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
                 // app-defined int constant. The callback method gets the
                 // result of the request.
             }
         } else {
             getContacts(getActivity());
+        }
+    }
+
+    private void checkExternalReadPermission() {
+        if (ContextCompat.checkSelfPermission(getActivity(),
+                Manifest.permission.READ_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            // Permission is not granted
+            // Should we show an explanation?
+            if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
+                    Manifest.permission.READ_EXTERNAL_STORAGE)) {
+                // Show an explanation to the user *asynchronously* -- don't block
+                // this thread waiting for the user's response! After the user
+                // sees the explanation, try again to request the permission.
+                new AlertDialog.Builder(getActivity())
+                        .setTitle("알림")
+                        .setMessage("저장소 권한이 거부되었습니다. 사용을 원하시면 설정에서 해당 권한을 직접 허용하셔야 합니다.")
+                        .setNeutralButton("설정", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                                intent.setData(Uri.parse("package:" + getActivity().getPackageName()));
+                                startActivity(intent);
+                                Toast.makeText(getActivity(), "저장소 읽기 권한을 활성화 하셔야 합니다.", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                Toast.makeText(getActivity(), "저장소 읽기 권한을 활성화 하셔야 합니다.", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .setCancelable(false)
+                        .create()
+                        .show();
+            } else {
+                // No explanation needed; request the permission
+                ActivityCompat.requestPermissions(getActivity(),
+                        new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                        MY_PERMISSION_EXTERNAL_READ);
+                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+            }
+        } else {
+            Intent intent = new Intent();
+            // 기기 기본 갤러리 접근 하는 Intent
+            intent.setType(MediaStore.Images.Media.CONTENT_TYPE);
+            intent.setAction(Intent.ACTION_PICK);
+            startActivityForResult(intent, REQUESTCODE_GALLERY);
         }
     }
 
@@ -366,6 +472,7 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
                             Toast.makeText(getActivity(), "이미 동일한 연락처가 존재합니다.", Toast.LENGTH_SHORT).show();
                             return;
                         }
+                        contact.setProfile(getResources().getDrawable(R.drawable.ic_baseline_account_circle_48));
                         ContactList.add(contact);
                         Collections.sort(ContactList);
                         mAdapter.notifyDataSetChanged();
@@ -405,13 +512,13 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
                             Toast.makeText(getActivity(), "정보를 모두 입력해 주세요.", Toast.LENGTH_SHORT).show();
                             return;
                         }
-                        Contact contact = new Contact(name, phoneNum);
+                        Contact contact = ContactList.get(pos);
+                        contact.setName(name);
+                        contact.setTelNum(phoneNum);
                         if (ContactList.contains(contact)) {
                             Toast.makeText(getActivity(), "이미 동일한 연락처가 존재합니다.", Toast.LENGTH_SHORT).show();
                             return;
                         }
-                        ContactList.remove(pos);
-                        ContactList.add(contact);
                         Collections.sort(ContactList);
                         mAdapter.notifyDataSetChanged();
                     }
@@ -428,15 +535,17 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
                 .show();
     }
 
+    // 현재 작동을 잘 못하고 있음. grantResults 배열이 어떤 식인지 잘 모르겠음.
     @Override
     public void onRequestPermissionsResult(int requestCode,
                                            String[] permissions, int[] grantResults) {
         switch (requestCode) {
-            case MY_PERMISSION_STORAGE: {
+            case MY_PERMISSION_CONTACT: {
                 // If request is cancelled, the result arrays are empty.
                 // grantResults[] : 허용된 권한은 0, 거부한 권한은 -1
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
                     // permission was granted, yay! Do the
                     // contacts-related task you need to do.
                     getContacts(getActivity());
@@ -444,11 +553,50 @@ public class ObjectFragment1 extends Fragment implements TextWatcher {
                     // permission denied, boo! Disable the
                     // functionality that depends on this permission.
                 }
+                break;
+            }
+
+            case MY_PERMISSION_EXTERNAL_READ: {
+                // If request is cancelled, the result arrays are empty.
+                // grantResults[] : 허용된 권한은 0, 거부한 권한은 -1
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // permission was granted, yay! Do the
+                    // contacts-related task you need to do.
+                } else {
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                }
+                break;
             }
             // other 'case' lines to check for other
             // permissions this app might request.
         }
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if(requestCode == REQUESTCODE_GALLERY && resultCode == RESULT_OK) {
+            try {
+                InputStream is = getActivity().getContentResolver().openInputStream(data.getData());
+                Bitmap bm = BitmapFactory.decodeStream(is);
+                is.close();
+                ContactList.get(targetPos).setProfile(new BitmapDrawable(bm));
+                mAdapter.notifyDataSetChanged();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else if(requestCode == REQUESTCODE_GALLERY && resultCode == RESULT_CANCELED) {
+            Toast.makeText(getActivity(), "취소", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void dialPhoneNumber(String phoneNumber) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:" + phoneNumber));
+        if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
 
 }

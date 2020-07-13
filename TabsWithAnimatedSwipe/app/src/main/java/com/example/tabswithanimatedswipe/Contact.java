@@ -1,10 +1,12 @@
 package com.example.tabswithanimatedswipe;
 
+import android.graphics.drawable.Drawable;
+
 public class Contact implements Comparable<Contact> {
     private String id; // id value
     private String name; // name of a person
     private String telNum; // telephone number of that person
-    /* private Uri thumbNail; // Uri for thumbnail image */
+    private Drawable profile; // profile picture
 
     public Contact(String name, String telNum) {
         this.name = name;
@@ -42,25 +44,20 @@ public class Contact implements Comparable<Contact> {
     public void setTelNum(String telNum) {
         this.telNum = telNum;
     }
-    /*
-    public void setThumbNail(Uri thumbNail) {
-        this.thumbNail = thumbNail;
-    }
 
+    public void setProfile(Drawable drawable) {
+        this.profile = drawable;
+    }
+    /*
     public String getId() {
         return this.id;
     }
     */
-    public String getName() {
-        return this.name;
-    }
+    public String getName() { return this.name; }
 
-    public String getTelNum() {
-        return this.telNum;
-    }
-    /*
-    public Uri getThumbNail() {
-        return this.thumbNail;
-    }
-     */
+    public String getTelNum() { return this.telNum; }
+
+    public Drawable getProfile() { return this.profile; }
+
+    public Boolean isProfileEmpty() { return (this.profile) == null; }
 }

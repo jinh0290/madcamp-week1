@@ -14,6 +14,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
 
 import pl.droidsonroids.gif.GifDrawable;
 
+// 앱의 기본 틀(TabLayout과 ViewPager2)을 만드는 액티비티 - 탭 내부의 세부사항은 다른 Fragment를 불러와서 채움.
 public class MainActivity extends FragmentActivity {
 
     /**
@@ -56,7 +57,7 @@ public class MainActivity extends FragmentActivity {
             case 1 :
                 tab.setText("연락처");
                 GifDrawable gifDrawable1 = null;
-                try { gifDrawable1 = new GifDrawable(getResources(), R.drawable.partyparrot); }
+                try { gifDrawable1 = new GifDrawable(getResources(), R.drawable.docparrot); }
                 catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -67,7 +68,7 @@ public class MainActivity extends FragmentActivity {
             case 2 :
                 tab.setText("이미지");
                 GifDrawable gifDrawable2 = null;
-                try { gifDrawable2 = new GifDrawable(getResources(), R.drawable.shufflefurtherparrot); }
+                try { gifDrawable2 = new GifDrawable(getResources(), R.drawable.quadparrot); }
                 catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -77,9 +78,9 @@ public class MainActivity extends FragmentActivity {
                 }
                 break;
             case 3 :
-                tab.setText("자율");
+                tab.setText("그림판");
                 GifDrawable gifDrawable3 = null;
-                try { gifDrawable3 = new GifDrawable(getResources(), R.drawable.slomoparrot); }
+                try { gifDrawable3 = new GifDrawable(getResources(), R.drawable.picassoparrot); }
                 catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -111,7 +112,6 @@ public class MainActivity extends FragmentActivity {
                     fragment = new ObjectFragment3();
                     break;
             }
-
             return fragment;
         }
 
