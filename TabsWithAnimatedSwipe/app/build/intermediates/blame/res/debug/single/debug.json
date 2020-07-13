@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_main.xml.flat",
+        "source": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
         "merged": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_bonobono_foreground.png.flat",
         "source": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\src\\main\\res\\mipmap-hdpi\\ic_bonobono_foreground.png"
     },
@@ -38,10 +42,6 @@
     {
         "merged": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_partyparrot.gif.flat",
         "source": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\src\\main\\res\\drawable\\partyparrot.gif"
-    },
-    {
-        "merged": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_blank.xml.flat",
-        "source": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\src\\main\\res\\layout\\fragment_blank.xml"
     },
     {
         "merged": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",

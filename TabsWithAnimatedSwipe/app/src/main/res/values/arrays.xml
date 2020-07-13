@@ -2,11 +2,13 @@
 <resources>
     <string-array name="item_selected_dialog">
 
-        <item >전화 걸기</item>
+        <item>전화 걸기</item>
 
-        <item >연락처 편집</item>
+        <item>SMS 보내기</item>
 
-        <item >연락처 삭제</item>
+        <item>연락처 편집</item>
+
+        <item>연락처 삭제</item>
 
     </string-array>
     <string-array name="photo_selected_dialog">

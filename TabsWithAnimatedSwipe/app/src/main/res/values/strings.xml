@@ -13,4 +13,24 @@
     <string name="edition_dialog_title_string">연락처 편집</string>
     <string name="edition_dialog_positive_button_string">확인</string>
     <string name="imageButton_listitem_string">프로필 사진</string>
+    <string name="action_settings">Settings</string>
+    <!-- Tab3 -->
+    <string name="contact">Contact</string>
+    <string name="gallery">Gallery</string>
+    <string name="music">Music</string>
+    <string name="clear">비우기</string>
+    <string name="red">RED</string>
+    <string name="blue">BLUE</string>
+    <string name="black">BLACK</string>
+    <string name="green">GREEN</string>
+    <string name="eraser">지우개</string>
+    <string name="custom">색상 지정</string>
+    <string name="set_color">Set Color</string>
+    <string name="option">옵션</string>
+    <string name="emboss">엠보싱</string>
+    <string name="blur">블러 효과</string>
+    <string name="normal">기본</string>
+    <string name="save">저장</string>
+    <string name="open">Open</string>
+    <string name="thickness">선 두께</string>
 </resources>

@@ -45,12 +45,24 @@ public class MainActivity extends FragmentActivity {
         pagerAdapter = new TapPagerAdapter(this);
         viewPager.setAdapter(pagerAdapter);
         viewPager.setPageTransformer(new ZoomOutPageTransformer());
+        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                if ((position + 1) == 3) {
+                    // 그림판(3번탭)에 들어갔을 때에는 스와이프 비활성화
+                    viewPager.setUserInputEnabled(false);
+                } else {
+                    viewPager.setUserInputEnabled(true);
+                }
+            }
+        });
 
         tabLayout = findViewById(R.id.tab_layout);
         new TabLayoutMediator(tabLayout, viewPager,
                 this::setTextOfTabs).attach();
         tabLayout.addOnTabSelectedListener(new MyOnTabSelectedListener());
     }
+
 
     private void setTextOfTabs(TabLayout.Tab tab, int position) {
         switch (position + 1) {
@@ -100,16 +112,16 @@ public class MainActivity extends FragmentActivity {
         @NonNull
         @Override
         public Fragment createFragment(int position) {
-            Fragment fragment = new ObjectFragment2(); // 코드를 조금 더 이쁘게 만들 수 있을 것 같은데
+            Fragment fragment = new TabFragment1(); // 코드를 조금 더 이쁘게 만들 수 있을 것 같은데
             switch (position + 1) {
                 case 1 :
-                    fragment = new ObjectFragment1();
+                    // fragment = new TabFragment1();
                     break;
                 case 2 :
-                    // fragment = new ObjectFragment2();
+                    fragment = new TabFragment2();
                     break;
                 case 3 :
-                    fragment = new ObjectFragment3();
+                    fragment = new TabFragment3();
                     break;
             }
             return fragment;
