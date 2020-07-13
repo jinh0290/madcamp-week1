@@ -1,12 +1,10 @@
 package com.example.fragment;
 
 import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentTabHost;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.widget.TabHost;
-import android.widget.TextView;
+
+import com.example.fragment.tabs.TabHostFragment;
 
 public class MainActivity extends FragmentActivity {
 

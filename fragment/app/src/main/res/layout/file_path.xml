@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <!--   <mexternal-path android:name="hidden"
+           android:path="/Pictures/Test" />-->
+
+    <cache-path
+        android:name="cache"
+        android:path="." /> <!--Context.getCacheDir() 내부 저장소-->
+    <files-path
+        name="files"
+        path="."
+        tools:ignore="MissingPrefix" /> <!--Context.getFilesDir() 내부 저장소-->
+
+    <external-path
+        android:name="external"
+        android:path="."/>  <!--  Environment.getExternalStorageDirectory() 외부 저장소-->
+    <external-cache-path
+        android:name="external-cache"
+        android:path="."/> <!--  Context.getExternalCacheDir() 외부 저장소-->
+    <external-files-path
+        android:name="external-files"
+        android:path="."/> <!--  Context.getExternalFilesDir() 외부 저장소-->
+
+
+</paths>
