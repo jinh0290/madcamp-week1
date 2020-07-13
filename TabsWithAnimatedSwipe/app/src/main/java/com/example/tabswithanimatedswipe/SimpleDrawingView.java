@@ -121,19 +121,10 @@ public class SimpleDrawingView extends View{
         invalidate();
     }
 
-    public void setmBitmap(Bitmap bitmap){
-        mBitmap = bitmap;
-    }
-
-
     @Override
     protected void onDraw(Canvas canvas) {
         //canvas.save();
         mCanvas.drawColor(backgroundColor);
-
-        if (mBitmap != null){
-            canvas.drawBitmap(mBitmap, 0, 0, null);
-        }
 
         for (FingerPath fp : paths) {
             mPaint.setColor(fp.color);
@@ -147,6 +138,10 @@ public class SimpleDrawingView extends View{
 
             mCanvas.drawPath(fp.path, mPaint);
 
+        }
+
+        if (mBitmap != null){
+            canvas.drawBitmap(mBitmap, 0, 0, null);
         }
 
         //canvas.restore();

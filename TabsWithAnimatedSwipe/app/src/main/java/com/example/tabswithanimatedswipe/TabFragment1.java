@@ -418,13 +418,13 @@ public class TabFragment1 extends Fragment implements TextWatcher {
                                 Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
                                 intent.setData(Uri.parse("package:" + getActivity().getPackageName()));
                                 startActivity(intent);
-                                Toast.makeText(getActivity(), "저장소 읽기 권한을 활성화 하셔야 합니다.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "외부 저장소 권한을 활성화 하셔야 합니다.", Toast.LENGTH_SHORT).show();
                             }
                         })
                         .setPositiveButton("확인", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                Toast.makeText(getActivity(), "저장소 읽기 권한을 활성화 하셔야 합니다.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "외부 저장소 권한을 활성화 하셔야 합니다.", Toast.LENGTH_SHORT).show();
                             }
                         })
                         .setCancelable(false)

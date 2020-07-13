@@ -187,14 +187,14 @@ public class TabFragment3 extends Fragment implements View.OnClickListener, Popu
                 paintview.blur();
                 return true;
             case R.id.save:
-                checkExternalWritePermission(item);
+                checkExternalWritePermission();
                 return true;
             default:
                 return false;
         }
     }
 
-    private void checkExternalWritePermission(MenuItem item) {
+    private void checkExternalWritePermission() {
         if (ContextCompat.checkSelfPermission(getActivity(),
                 Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
@@ -232,16 +232,13 @@ public class TabFragment3 extends Fragment implements View.OnClickListener, Popu
                 ActivityCompat.requestPermissions(getActivity(),
                         new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
                         MY_PERMISSION_EXTERNAL_WRITE);
-                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
-                // app-defined int constant. The callback method gets the
-                // result of the request.
             }
         } else {
             // permssion 있을 때 할 일
             paintview.invalidate();
             paintview.buildDrawingCache();
             Bitmap bitmap = paintview.getDrawingCache();
-            File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES),"CustomPic"+ (saveCnt++) + ".png");
+            File file = new File(Environment.getExternalStoragePublicDirectory(DIRECTORY_PICTURES),"CustomPic"+ (saveCnt++) + ".png");
             FileOutputStream out;
             try {
                 out = new FileOutputStream(file);
