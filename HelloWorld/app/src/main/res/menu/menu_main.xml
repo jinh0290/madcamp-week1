@@ -2,9 +2,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.helloworld.MainActivity">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+    <item android:id="@+id/normal"
+        android:title="@string/normal" />
+    <item android:id="@+id/emboss"
+        android:title="@string/emboss" />
+    <item android:id="@+id/blur"
+        android:title="@string/blur" />
+    <item android:id="@+id/save"
+        android:title="@string/save" />
 </menu>
