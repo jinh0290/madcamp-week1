@@ -1,10 +1,10 @@
 # madcamp-week1
 2020 여름 KAIST 몰입캠프 1주차 공통과제
 
-팀원 : 김규리, 이찬희, 최진혁
-프로젝트 이름 : TabsWithAnimatedSwipe
+[팀원] : 김규리, 이찬희, 최진혁
+[프로젝트 이름] : TabsWithAnimatedSwipe
 
-전체적인 구조 : 
+[전체적인 구조] : 
   - 간단한 IntroActivity를 삽입하여 스플래시 화면을 구현하였음.
   - ViewPager2의 PageTransformer를 사용하여 스와이프 할 때의 애니메이션을 적용하였음.
   - TabLayout과 ViewPager2를 활용하여 스와이프로 탭 전환이 가능하게 구현하였음.
@@ -12,7 +12,7 @@
   - 외부 라이브러리를 활용하여 탭 아이콘의 GIF를 재생할 수 있게 하였음.
   - checkSelfPermission와 requestPermissions를 이용해서 권한이 필요한 작업을 실행할 때 권한 확인 & 요청을 할 수 있게하였음.
   
-각 탭에 대한 설명 :
+[각 탭에 대한 설명] :
 
   <1번탭> 
   - RecyclerView를 이용해서 연락처 정보를 표시함
