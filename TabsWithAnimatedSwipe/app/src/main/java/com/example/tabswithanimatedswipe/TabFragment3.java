@@ -6,8 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,7 +17,6 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import android.os.Environment;
-import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
@@ -27,7 +24,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.SeekBar;
 import android.widget.Toast;
@@ -35,7 +31,6 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
 
 import yuku.ambilwarna.AmbilWarnaDialog;
 
@@ -81,7 +76,7 @@ public class TabFragment3 extends Fragment implements View.OnClickListener, Popu
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_object3, container, false);
+        return inflater.inflate(R.layout.fragment_tab3, container, false);
     }
 
     @Override
@@ -242,7 +237,7 @@ public class TabFragment3 extends Fragment implements View.OnClickListener, Popu
             FileOutputStream out;
             try {
                 out = new FileOutputStream(file);
-                if(out != null){
+                if(out != null) {
                     bitmap.compress(Bitmap.CompressFormat.PNG, 75, out);
                     Toast.makeText(getActivity(), "Save Success", Toast.LENGTH_SHORT).show();
                 }

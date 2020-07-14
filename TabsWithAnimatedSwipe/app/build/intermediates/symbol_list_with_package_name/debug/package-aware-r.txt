@@ -1375,6 +1375,7 @@ drawable docparrot
 drawable ic_baseline_account_circle_24
 drawable ic_baseline_account_circle_48
 drawable ic_baseline_add_24
+drawable ic_baseline_list_24
 drawable ic_bonobono_background
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
@@ -1418,6 +1419,7 @@ drawable quadparrot
 drawable rainbow
 drawable shufflefurtherparrot
 drawable slomoparrot
+drawable splash_background
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1588,6 +1590,7 @@ id icon_group
 id ifRoom
 id image
 id imageButton_listitem
+id imageButton_searchBox
 id info
 id invisible
 id italic
@@ -1656,6 +1659,8 @@ id peekHeight
 id percent
 id phone_number
 id pin
+id popup_menu_clear
+id popup_menu_load
 id progress_circular
 id progress_horizontal
 id radio
@@ -1675,6 +1680,7 @@ id scrollIndicatorUp
 id scrollView
 id scrollable
 id searchBox
+id searchBox_layout
 id search_badge
 id search_bar
 id search_button
@@ -1843,9 +1849,9 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_addcontact
 layout dialog_editcontact
-layout fragment_object1
-layout fragment_object2
-layout fragment_object3
+layout fragment_tab1
+layout fragment_tab2
+layout fragment_tab3
 layout list_item_layout
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
@@ -1875,6 +1881,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout new_fragment_tab1
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1907,6 +1914,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu menu_main
+menu popup_menu
 mipmap ic_bonobono
 mipmap ic_bonobono_foreground
 mipmap ic_bonobono_round
@@ -1970,7 +1978,6 @@ string fab_transformation_sheet_behavior
 string gallery
 string get_contacts_button_string
 string green
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string imageButton_listitem_string
@@ -2019,6 +2026,8 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string phone_number_hint_string
+string popup_menu1
+string popup_menu2
 string red
 string save
 string search_box_hint
@@ -2308,6 +2317,7 @@ style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year
 style ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox
 style ShapeAppearanceOverlay_TopLeftCut
 style ShapeAppearanceOverlay_TopRightDifferentCornerSize
+style SplashTheme
 style Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day
 style Test_Theme_MaterialComponents_MaterialCalendar
 style Test_Widget_MaterialComponents_MaterialCalendar

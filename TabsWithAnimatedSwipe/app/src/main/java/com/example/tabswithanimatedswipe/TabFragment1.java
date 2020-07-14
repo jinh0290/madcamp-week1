@@ -30,13 +30,15 @@ import android.provider.Settings;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageButton;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -62,8 +64,9 @@ public class TabFragment1 extends Fragment implements TextWatcher {
     MyAdapter mAdapter;
     RecyclerView.LayoutManager layoutManager;
     private List<Contact> ContactList;
-    Button button_contact;
-    Button button_clearing;
+    // Button button_contact;
+    // Button button_clearing;
+    ImageButton button_popup;
     FloatingActionButton fab_add;
     View fragmentView;
     private int targetPos;
@@ -72,7 +75,15 @@ public class TabFragment1 extends Fragment implements TextWatcher {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        fragmentView = inflater.inflate(R.layout.fragment_object1, container, false);
+        fragmentView = inflater.inflate(R.layout.new_fragment_tab1, container, false);
+        button_popup = fragmentView.findViewById(R.id.imageButton_searchBox);
+        button_popup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showPopup(view);
+            }
+        });
+        /*
         button_contact = fragmentView.findViewById(R.id.get_contacts_button);
         button_contact.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +99,7 @@ public class TabFragment1 extends Fragment implements TextWatcher {
                 mAdapter.notifyDataSetChanged();
             }
         });
+        */
         fab_add = fragmentView.findViewById(R.id.addition_fab);
         fab_add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -547,12 +559,19 @@ public class TabFragment1 extends Fragment implements TextWatcher {
             case MY_PERMISSION_CONTACT: {
                 // If request is cancelled, the result arrays are empty.
                 // grantResults[] : 허용된 권한은 0, 거부한 권한은 -1
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                    // permission was granted, yay! Do the
-                    // contacts-related task you need to do.
-                    getContacts(getActivity());
+                if (grantResults.length > 0) {
+                    boolean check_result = true;
+                    for (int result : grantResults) {
+                        if (result != PackageManager.PERMISSION_GRANTED) {
+                            check_result = false;
+                            break;
+                        }
+                    }
+                    if (check_result) {
+                        // permission was granted, yay! Do the
+                        // contacts-related task you need to do.
+                        getContacts(getActivity());
+                    }
                 } else {
                     // permission denied, boo! Disable the
                     // functionality that depends on this permission.
@@ -565,8 +584,7 @@ public class TabFragment1 extends Fragment implements TextWatcher {
                 // grantResults[] : 허용된 권한은 0, 거부한 권한은 -1
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // permission was granted, yay! Do the
-                    // contacts-related task you need to do.
+                    // permission was granted, yay!
                 } else {
                     // permission denied, boo! Disable the
                     // functionality that depends on this permission.
@@ -611,4 +629,26 @@ public class TabFragment1 extends Fragment implements TextWatcher {
         }
     }
 
+    private void showPopup(View v) {
+        PopupMenu popup = new PopupMenu(getActivity(), v);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.popup_menu, popup.getMenu());
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+                switch (menuItem.getItemId()) {
+                    case R.id.popup_menu_load:
+                        setContacts();
+                        return true;
+                    case R.id.popup_menu_clear:
+                        ContactList.clear();
+                        mAdapter.notifyDataSetChanged();
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+        });
+        popup.show();
+    }
 }
