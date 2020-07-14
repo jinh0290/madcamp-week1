@@ -104,10 +104,6 @@
         "source": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circular_button.xml.flat",
-        "source": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\src\\main\\res\\drawable\\circular_button.xml"
-    },
-    {
         "merged": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_bonobono_round.png.flat",
         "source": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\src\\main\\res\\mipmap-hdpi\\ic_bonobono_round.png"
     },
@@ -186,10 +182,6 @@
     {
         "merged": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash_background.xml.flat",
-        "source": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\src\\main\\res\\drawable\\splash_background.xml"
     },
     {
         "merged": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shufflefurtherparrot.gif.flat",

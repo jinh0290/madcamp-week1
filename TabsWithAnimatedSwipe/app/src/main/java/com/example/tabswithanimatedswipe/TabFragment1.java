@@ -397,7 +397,7 @@ public class TabFragment1 extends Fragment implements TextWatcher {
                         .show();
             } else {
                 // No explanation needed; request the permission
-                ActivityCompat.requestPermissions(getActivity(),
+                requestPermissions(
                         new String[]{Manifest.permission.READ_CONTACTS},
                         MY_PERMISSION_CONTACT);
                 // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
@@ -444,7 +444,7 @@ public class TabFragment1 extends Fragment implements TextWatcher {
                         .show();
             } else {
                 // No explanation needed; request the permission
-                ActivityCompat.requestPermissions(getActivity(),
+                requestPermissions(
                         new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
                         MY_PERMISSION_EXTERNAL_READ);
                 // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
@@ -452,11 +452,7 @@ public class TabFragment1 extends Fragment implements TextWatcher {
                 // result of the request.
             }
         } else {
-            Intent intent = new Intent();
-            // 기기 기본 갤러리 접근 하는 Intent
-            intent.setType(MediaStore.Images.Media.CONTENT_TYPE);
-            intent.setAction(Intent.ACTION_PICK);
-            startActivityForResult(intent, REQUESTCODE_GALLERY);
+            openGallery();
         }
     }
 
@@ -573,8 +569,8 @@ public class TabFragment1 extends Fragment implements TextWatcher {
                         getContacts(getActivity());
                     }
                 } else {
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
+                    // permission denied, boo!
+                    Toast.makeText(getActivity(), "연락처 권한을 활성화 하셔야 합니다.", Toast.LENGTH_SHORT).show();
                 }
                 break;
             }
@@ -582,12 +578,21 @@ public class TabFragment1 extends Fragment implements TextWatcher {
             case MY_PERMISSION_EXTERNAL_READ: {
                 // If request is cancelled, the result arrays are empty.
                 // grantResults[] : 허용된 권한은 0, 거부한 권한은 -1
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // permission was granted, yay!
+                if (grantResults.length > 0) {
+                    boolean check_result = true;
+                    for (int result : grantResults) {
+                        if (result != PackageManager.PERMISSION_GRANTED) {
+                            check_result = false;
+                            break;
+                        }
+                    }
+                    if (check_result) {
+                        // permission was granted, yay!
+                        openGallery();
+                    }
                 } else {
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
+                    // permission denied, boo!
+                    Toast.makeText(getActivity(), "외부 저장소 권한을 활성화 하셔야 합니다.", Toast.LENGTH_SHORT).show();
                 }
                 break;
             }
@@ -651,4 +656,13 @@ public class TabFragment1 extends Fragment implements TextWatcher {
         });
         popup.show();
     }
+
+    private void openGallery() {
+        Intent intent = new Intent();
+        // 기기 기본 갤러리 접근 하는 Intent
+        intent.setType(MediaStore.Images.Media.CONTENT_TYPE);
+        intent.setAction(Intent.ACTION_PICK);
+        startActivityForResult(intent, REQUESTCODE_GALLERY);
+    }
+
 }
