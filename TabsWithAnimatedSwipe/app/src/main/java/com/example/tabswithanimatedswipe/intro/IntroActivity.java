@@ -1,4 +1,4 @@
-package com.example.tabswithanimatedswipe;
+package com.example.tabswithanimatedswipe.intro;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+
+import com.example.tabswithanimatedswipe.MainActivity;
+import com.example.tabswithanimatedswipe.R;
 
 public class IntroActivity extends AppCompatActivity {
 

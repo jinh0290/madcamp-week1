@@ -1,4 +1,4 @@
-package com.example.tabswithanimatedswipe;
+package com.example.tabswithanimatedswipe.contact;
 
 import android.Manifest;
 import android.app.AlertDialog;
@@ -42,6 +42,8 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.tabswithanimatedswipe.R;
+import com.example.tabswithanimatedswipe.contact.Contact;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.InputStream;

@@ -1,10 +1,11 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\081958b85be993b26123dd5b1125e07f\material-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\3d6aba30790fd4ad198fa2038bcddfae\jetified-tedpermission-2.0.0\AndroidManifest.xml:2:1-15:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\c2c5fa787d66aaf40578b3071f4d283f\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\q\.gradle\caches\transforms-2\files-2.1\28120aa98d624ce8fee0a8087788fd91\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\2fb8103c62e3ee1e6e4cc337dd696441\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -44,39 +45,41 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\q\.gradle\cac
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\df4d09f70e3f533a2fede8f96085147c\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\c16c855844b564ee7204d4d6005470fb\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [pl.droidsonroids:relinker:1.3.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\b0c0b3ea7bc6e8b0a4e58ba03fa7b580\jetified-relinker-1.3.1\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:3:5-48
-		INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
-		INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:3:5-48
+		INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-26:12
-		INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-30:12
+		INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-26:12
-		INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:1-30:12
+		INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.READ_CONTACTS
-ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:5:5-72
+ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:5:5-72
 	android:name
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:5:22-69
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:5:22-69
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:6:5-80
+ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:6:5-80
 	android:name
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:6:22-77
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:6:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:7:5-81
+ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:7:22-78
 application
-ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:9:5-24:19
+ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:9:5-28:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\081958b85be993b26123dd5b1125e07f\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\081958b85be993b26123dd5b1125e07f\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\3d6aba30790fd4ad198fa2038bcddfae\jetified-tedpermission-2.0.0\AndroidManifest.xml:9:5-13:19
+MERGED from [gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\3d6aba30790fd4ad198fa2038bcddfae\jetified-tedpermission-2.0.0\AndroidManifest.xml:9:5-13:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\q\.gradle\caches\transforms-2\files-2.1\28120aa98d624ce8fee0a8087788fd91\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\q\.gradle\caches\transforms-2\files-2.1\28120aa98d624ce8fee0a8087788fd91\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\03736cf4bc3669a69d502627b70a527e\core-1.1.0\AndroidManifest.xml:24:5-89
@@ -84,45 +87,51 @@ MERGED from [androidx.core:core:1.1.0] C:\Users\q\.gradle\caches\transforms-2\fi
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\3c1a5ebf565097fe10667d6b9a2c1703\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\3c1a5ebf565097fe10667d6b9a2c1703\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 	android:requestLegacyExternalStorage
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:15:9-52
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:15:9-52
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\03736cf4bc3669a69d502627b70a527e\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:16:9-40
-activity#com.example.tabswithanimatedswipe.IntroActivity
-ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:17:9-22:20
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:16:9-40
+activity#com.example.tabswithanimatedswipe.intro.IntroActivity
+ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:17:9-22:20
 	android:name
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:17:19-48
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:17:19-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:18:13-21:29
+ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:18:13-21:29
 action#android.intent.action.MAIN
-ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:19:17-69
+ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:20:27-74
 activity#com.example.tabswithanimatedswipe.MainActivity
-ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:23:9-60
+ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:23:9-60
 	android:name
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:23:19-47
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:23:19-47
+activity#com.example.tabswithanimatedswipe.gallery.FullImageActivity
+ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:26:9-72
+	android:name
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:26:19-60
 uses-sdk
-INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
-INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\081958b85be993b26123dd5b1125e07f\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\081958b85be993b26123dd5b1125e07f\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\3d6aba30790fd4ad198fa2038bcddfae\jetified-tedpermission-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\3d6aba30790fd4ad198fa2038bcddfae\jetified-tedpermission-2.0.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\c2c5fa787d66aaf40578b3071f4d283f\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\c2c5fa787d66aaf40578b3071f4d283f\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\q\.gradle\caches\transforms-2\files-2.1\28120aa98d624ce8fee0a8087788fd91\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
@@ -201,13 +210,19 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\q\.gradle\caches\tr
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\c16c855844b564ee7204d4d6005470fb\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [pl.droidsonroids:relinker:1.3.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\b0c0b3ea7bc6e8b0a4e58ba03fa7b580\jetified-relinker-1.3.1\AndroidManifest.xml:5:5-43
 MERGED from [pl.droidsonroids:relinker:1.3.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\b0c0b3ea7bc6e8b0a4e58ba03fa7b580\jetified-relinker-1.3.1\AndroidManifest.xml:5:5-43
-INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
-INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
-		INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
-		ADDED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
-		INJECTED from C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+activity#com.gun0912.tedpermission.TedPermissionActivity
+ADDED from [gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\3d6aba30790fd4ad198fa2038bcddfae\jetified-tedpermission-2.0.0\AndroidManifest.xml:10:9-12:67
+	android:theme
+		ADDED from [gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\3d6aba30790fd4ad198fa2038bcddfae\jetified-tedpermission-2.0.0\AndroidManifest.xml:12:13-64
+	android:name
+		ADDED from [gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\3d6aba30790fd4ad198fa2038bcddfae\jetified-tedpermission-2.0.0\AndroidManifest.xml:11:13-75

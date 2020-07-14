@@ -7,10 +7,11 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
-import android.view.MenuInflater;
 import android.view.View;
-import android.widget.PopupMenu;
 
+import com.example.tabswithanimatedswipe.contact.TabFragment1;
+import com.example.tabswithanimatedswipe.drawing.TabFragment3;
+import com.example.tabswithanimatedswipe.gallery.TabFragment2;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 

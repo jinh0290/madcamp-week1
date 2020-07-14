@@ -1,4 +1,4 @@
-package com.example.tabswithanimatedswipe;
+package com.example.tabswithanimatedswipe.drawing;
 
 import android.Manifest;
 import android.app.AlertDialog;
@@ -27,6 +27,9 @@ import android.widget.Button;
 import android.widget.PopupMenu;
 import android.widget.SeekBar;
 import android.widget.Toast;
+
+import com.example.tabswithanimatedswipe.R;
+import com.example.tabswithanimatedswipe.drawing.SimpleDrawingView;
 
 import java.io.File;
 import java.io.FileOutputStream;

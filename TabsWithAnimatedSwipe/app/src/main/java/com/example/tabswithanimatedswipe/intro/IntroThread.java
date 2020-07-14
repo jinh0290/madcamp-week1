@@ -1,4 +1,4 @@
-package com.example.tabswithanimatedswipe;
+package com.example.tabswithanimatedswipe.intro;
 
 import android.os.Message;
 

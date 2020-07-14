@@ -133,7 +133,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/simpleDrawingView1"
         app:layout_constraintTop_toTopOf="parent" />
-    <com.example.tabswithanimatedswipe.SimpleDrawingView
+    <com.example.tabswithanimatedswipe.drawing.SimpleDrawingView
         android:id="@+id/simpleDrawingView1"
         android:layout_width="match_parent"
         android:layout_height="500dp"

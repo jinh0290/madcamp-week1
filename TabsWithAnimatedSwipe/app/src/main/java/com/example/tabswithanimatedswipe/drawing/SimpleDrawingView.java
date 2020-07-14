@@ -1,4 +1,4 @@
-package com.example.tabswithanimatedswipe;
+package com.example.tabswithanimatedswipe.drawing;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,6 +13,8 @@ import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.example.tabswithanimatedswipe.drawing.FingerPath;
 
 import java.util.ArrayList;
 

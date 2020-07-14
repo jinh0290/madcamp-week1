@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
+            "outputFile": "C:\\Users\\q\\AndroidStudioProjects\\git\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\3d6aba30790fd4ad198fa2038bcddfae\\jetified-tedpermission-2.0.0\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,106,159",
+                        "endColumns": "50,52,52",
+                        "endOffsets": "101,154,207"
+                    },
+                    "to": {
+                        "startLines": "31,32,33",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "2864,2915,2968",
+                        "endColumns": "50,52,52",
+                        "endOffsets": "2910,2963,3016"
+                    }
+                },
                 {
                     "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\c2c5fa787d66aaf40578b3071f4d283f\\appcompat-1.1.0\\res\\values-ko\\values-ko.xml",
                     "from": {

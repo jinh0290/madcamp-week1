@@ -24,7 +24,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.tabswithanimatedswipe.IntroActivity" >
+        <activity android:name="com.example.tabswithanimatedswipe.intro.IntroActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,6 +33,12 @@
         </activity>
         <activity android:name="com.example.tabswithanimatedswipe.MainActivity" >
         </activity>
+
+        <!-- FullImageActivity -->
+        <activity android:name="com.example.tabswithanimatedswipe.gallery.FullImageActivity" />
+        <activity
+            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+            android:theme="@style/Theme.Transparent.Permission" />
     </application>
 
 </manifest>

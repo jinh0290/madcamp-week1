@@ -1,4 +1,4 @@
-package com.example.tabswithanimatedswipe;
+package com.example.tabswithanimatedswipe.contact;
 
 import android.graphics.drawable.Drawable;
 
