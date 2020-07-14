@@ -378,7 +378,7 @@ public class TabFragment1 extends Fragment implements TextWatcher {
                 // sees the explanation, try again to request the permission.
                 new AlertDialog.Builder(getActivity())
                         .setTitle("알림")
-                        .setMessage("저장소 권한이 거부되었습니다. 사용을 원하시면 설정에서 해당 권한을 직접 허용하셔야 합니다.")
+                        .setMessage("연락처 권한이 거부되었습니다. 사용을 원하시면 설정에서 해당 권한을 직접 허용하셔야 합니다.")
                         .setNeutralButton("설정", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {

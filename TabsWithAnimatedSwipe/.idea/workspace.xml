@@ -7,52 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f2e52a8-ea95-4222-8890-e888535141b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/gallery/CameraActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/gallery/FullImageActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/gallery/ImageAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/gallery/MediaScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fab_close.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fab_open.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/camera_img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/folder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pic9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/full_image.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/tabswithanimatedswipe/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/tabswithanimatedswipe/BuildConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-am.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-am.json" afterDir="false" />
@@ -168,9 +134,6 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/bundle-manifest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/bundle-manifest/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/bundle-manifest/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compatible_screen_manifest/debug/out/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compatible_screen_manifest/debug/out/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" afterDir="false" />
@@ -183,22 +146,11 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/tabswithanimatedswipe/Contact.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/tabswithanimatedswipe/MainActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/tabswithanimatedswipe/MainActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/tabswithanimatedswipe/MainActivity$MyOnTabSelectedListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/tabswithanimatedswipe/MainActivity$MyOnTabSelectedListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/tabswithanimatedswipe/MainActivity$TapPagerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/tabswithanimatedswipe/MainActivity$TapPagerAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/tabswithanimatedswipe/MainActivity$ZoomOutPageTransformer.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/tabswithanimatedswipe/MainActivity$ZoomOutPageTransformer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/tabswithanimatedswipe/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/tabswithanimatedswipe/MainActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_java_res/debug/out.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_java_res/debug/out.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/metadata_feature_manifest/debug/metadata-feature/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/metadata_feature_manifest/debug/metadata-feature/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/tabswithanimatedswipe/BuildConfig.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/tabswithanimatedswipe/BuildConfig.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/tabswithanimatedswipe/Contact.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/tabswithanimatedswipe/MainActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/tabswithanimatedswipe/MainActivity$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/tabswithanimatedswipe/MainActivity$MyOnTabSelectedListener.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/tabswithanimatedswipe/MainActivity$MyOnTabSelectedListener.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/tabswithanimatedswipe/MainActivity$TapPagerAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/tabswithanimatedswipe/MainActivity$TapPagerAdapter.dex" afterDir="false" />
@@ -341,185 +293,17 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/contact/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/FingerPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/drawing/FingerPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/IntroActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/intro/IntroActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/IntroThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/intro/IntroThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/SimpleDrawingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/drawing/SimpleDrawingView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/TabFragment1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/contact/TabFragment1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/TabFragment2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/gallery/TabFragment2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/TabFragment3.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/drawing/TabFragment3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_intro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_intro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tab2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tab2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tab3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tab3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/androidTest/java/com/example/fragment/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/FakeContent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/FileCreatorActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/FolderListActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/Fragment1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/Fragment2_gallery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/Fragment3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/IntroActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/TabHostFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/camera/CameraActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/camera/MediaScanner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/gallery/FileCreatorActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/gallery/FolderListActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/tabs/FakeContent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/tabs/Fragment1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/tabs/Fragment2_gallery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/tabs/Fragment3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/java/com/example/fragment/tabs/TabHostFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/drawable-v24/button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/drawable-v24/intro.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/layout/file_path.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/layout/fragment1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/layout/fragment2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/layout/fragment3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/layout/fragment_folder_list.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/layout/intro_layout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/layout/row.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/layout/tabs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/main/res/xml/file_paths.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/app/src/test/java/com/example/fragment/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fragment/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gyuree/TabsWithAnimatedSwipe/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gyuree/TabsWithAnimatedSwipe/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gyuree/TabsWithAnimatedSwipe/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gyuree/TabsWithAnimatedSwipe/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gyuree/TabsWithAnimatedSwipe/app/src/main/java/com/example/tabswithanimatedswipe/gallery/ImageAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gyuree/TabsWithAnimatedSwipe/app/src/main/java/com/example/tabswithanimatedswipe/gallery/ImageAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/androidTest/java/com/example/week1_tab/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/assets/Phonebook.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/java/com/example/week1_tab/FirstFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/java/com/example/week1_tab/ImageAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/java/com/example/week1_tab/ImageUrl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/java/com/example/week1_tab/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/java/com/example/week1_tab/Phonebook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/java/com/example/week1_tab/RecyclerViewAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/java/com/example/week1_tab/SecondFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/pic9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/tab1_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/tab1_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/tab2_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/tab2_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/tab3_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable-v24/tab3_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable/tab_01.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable/tab_02.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/drawable/tab_03.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/layout/activity_tab1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/layout/activity_tab2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/layout/activity_tab3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/layout/content_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/layout/fragment_first.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/layout/fragment_second.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/layout/list_item.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/layout/recycler_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/layout/row.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/menu/menu_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/app/src/test/java/com/example/week1_tab/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week1_tab/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/contact/TabFragment1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/contact/TabFragment1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/gallery/TabFragment2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tabswithanimatedswipe/gallery/TabFragment2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="ce02160249e9152105" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="R39M401NTYA" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -557,15 +341,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ApkExportedModule" value="app" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="ce02160249e9152105" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-14T13:08:29.183Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="R39M401NTYA" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-14T13:28:33.941Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.tabswithanimatedswipe.gallery" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\res\layout" />
+      <recent name="C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\res\drawable-v24" />
+      <recent name="C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\res" />
     </key>
     <key name="android.template.-1420682151">
       <recent name="com.example.tabswithanimatedswipe" />
@@ -577,10 +363,8 @@
       <recent name="com.example.tabswithanimatedswipe.gallery" />
       <recent name="com.example.tabswithanimatedswipe" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\res\layout" />
-      <recent name="C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\res\drawable-v24" />
-      <recent name="C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\res" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.tabswithanimatedswipe.gallery" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -725,6 +509,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594639485024" />
+    <state x="715" y="378" width="494" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594733397152">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="378" width="494" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594733397152" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594715078492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -746,28 +534,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="757" y="255" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594703661080" />
-    <state width="1877" height="206" key="GridCell.Tab.0.bottom" timestamp="1594732897443">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="0" height="0" key="GridCell.Tab.0.bottom" timestamp="1594734171880">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594716051154" />
+    <state width="0" height="0" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594734171880" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594383812983" />
     <state width="1877" height="206" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1594732897443" />
-    <state width="1877" height="206" key="GridCell.Tab.0.center" timestamp="1594732897443">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="0" height="0" key="GridCell.Tab.0.center" timestamp="1594734171880">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594716051154" />
+    <state width="0" height="0" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594734171880" />
     <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594383812983" />
     <state width="1877" height="206" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1594732897443" />
-    <state width="1877" height="206" key="GridCell.Tab.0.left" timestamp="1594732897443">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="0" height="0" key="GridCell.Tab.0.left" timestamp="1594734171880">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594716051154" />
+    <state width="0" height="0" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594734171880" />
     <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594383812983" />
     <state width="1877" height="206" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1594732897443" />
-    <state width="1877" height="206" key="GridCell.Tab.0.right" timestamp="1594732897443">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="0" height="0" key="GridCell.Tab.0.right" timestamp="1594734171880">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594716051154" />
+    <state width="0" height="0" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594734171880" />
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594383812983" />
     <state width="1877" height="206" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1594732897443" />
     <state x="92" y="92" width="1736" height="856" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1594648067917">

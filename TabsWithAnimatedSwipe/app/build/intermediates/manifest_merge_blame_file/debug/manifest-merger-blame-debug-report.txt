@@ -6,70 +6,73 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
-8-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+8-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
+9-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.READ_CONTACTS" />
-11-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:5:5-72
-11-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:5:22-69
+11-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:5:5-72
+11-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:5:22-69
 12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-12-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:6:5-80
-12-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:6:22-77
+12-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:6:22-77
 13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-13-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:7:5-81
-13-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:7:22-78
-14
-15    <application
-15-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:9:5-28:19
-16        android:allowBackup="true"
-16-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:10:9-35
-17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\03736cf4bc3669a69d502627b70a527e\core-1.1.0\AndroidManifest.xml:24:18-86
-18        android:debuggable="true"
-19        android:extractNativeLibs="false"
-20        android:icon="@mipmap/ic_bonobono"
-20-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:11:9-43
-21        android:label="@string/app_name"
-21-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:12:9-41
-22        android:requestLegacyExternalStorage="true"
-22-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:15:9-52
-23        android:roundIcon="@mipmap/ic_bonobono_round"
-23-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:13:9-54
-24        android:supportsRtl="true"
-24-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:14:9-35
-25        android:testOnly="true"
-26        android:theme="@style/AppTheme" >
-26-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:16:9-40
-27        <activity android:name="com.example.tabswithanimatedswipe.intro.IntroActivity" >
-27-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:17:9-22:20
-27-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:17:19-54
-28            <intent-filter>
-28-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:18:13-21:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:19:17-69
-29-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:19:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:20:17-77
-31-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:20:27-74
-32            </intent-filter>
-33        </activity>
-34        <activity android:name="com.example.tabswithanimatedswipe.MainActivity" >
-34-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:23:9-60
-34-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:23:19-47
-35        </activity>
-36
-37        <!-- FullImageActivity -->
-38        <activity android:name="com.example.tabswithanimatedswipe.gallery.FullImageActivity" />
-38-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:26:9-72
-38-->C:\Users\q\AndroidStudioProjects\git\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:26:19-60
-39        <activity
-39-->[gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\3d6aba30790fd4ad198fa2038bcddfae\jetified-tedpermission-2.0.0\AndroidManifest.xml:10:9-12:67
-40            android:name="com.gun0912.tedpermission.TedPermissionActivity"
-40-->[gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\3d6aba30790fd4ad198fa2038bcddfae\jetified-tedpermission-2.0.0\AndroidManifest.xml:11:13-75
-41            android:theme="@style/Theme.Transparent.Permission" />
-41-->[gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\3d6aba30790fd4ad198fa2038bcddfae\jetified-tedpermission-2.0.0\AndroidManifest.xml:12:13-64
-42    </application>
-43
-44</manifest>
+13-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:8:5-65
+14-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:8:22-62
+15
+16    <application
+16-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:10:5-29:19
+17        android:allowBackup="true"
+17-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:11:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\03736cf4bc3669a69d502627b70a527e\core-1.1.0\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:extractNativeLibs="false"
+21        android:icon="@mipmap/ic_bonobono"
+21-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:12:9-43
+22        android:label="@string/app_name"
+22-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:13:9-41
+23        android:requestLegacyExternalStorage="true"
+23-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:16:9-52
+24        android:roundIcon="@mipmap/ic_bonobono_round"
+24-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:14:9-54
+25        android:supportsRtl="true"
+25-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:15:9-35
+26        android:testOnly="true"
+27        android:theme="@style/AppTheme" >
+27-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:17:9-40
+28        <activity android:name="com.example.tabswithanimatedswipe.intro.IntroActivity" >
+28-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:18:9-23:20
+28-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:18:19-54
+29            <intent-filter>
+29-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:19:13-22:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:20:17-69
+30-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:20:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:21:17-77
+32-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:21:27-74
+33            </intent-filter>
+34        </activity>
+35        <activity android:name="com.example.tabswithanimatedswipe.MainActivity" >
+35-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:24:9-60
+35-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:24:19-47
+36        </activity>
+37
+38        <!-- FullImageActivity -->
+39        <activity android:name="com.example.tabswithanimatedswipe.gallery.FullImageActivity" />
+39-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:27:9-72
+39-->C:\madcamp-week1\TabsWithAnimatedSwipe\app\src\main\AndroidManifest.xml:27:19-60
+40        <activity
+40-->[gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\b106757a35f3e6c24bc23fd3f158e2dc\jetified-tedpermission-2.0.0\AndroidManifest.xml:10:9-12:67
+41            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+41-->[gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\b106757a35f3e6c24bc23fd3f158e2dc\jetified-tedpermission-2.0.0\AndroidManifest.xml:11:13-75
+42            android:theme="@style/Theme.Transparent.Permission" />
+42-->[gun0912.ted:tedpermission:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\b106757a35f3e6c24bc23fd3f158e2dc\jetified-tedpermission-2.0.0\AndroidManifest.xml:12:13-64
+43    </application>
+44
+45</manifest>

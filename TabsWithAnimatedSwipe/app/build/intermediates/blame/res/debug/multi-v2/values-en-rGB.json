@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\q\\AndroidStudioProjects\\git\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rGB\\values-en-rGB.xml",
+            "outputFile": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rGB\\values-en-rGB.xml",
             "map": [
                 {
                     "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\03736cf4bc3669a69d502627b70a527e\\core-1.1.0\\res\\values-en-rGB\\values-en-rGB.xml",

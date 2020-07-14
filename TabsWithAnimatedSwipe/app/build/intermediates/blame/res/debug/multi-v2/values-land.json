@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\q\\AndroidStudioProjects\\git\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "C:\\madcamp-week1\\TabsWithAnimatedSwipe\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
                     "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\c0f5718e70ad05946ea9dfa9c7b3e6de\\jetified-ambilwarna-2.0.1\\res\\values-land\\values-land.xml",
