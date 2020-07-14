@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">몰입캠프 1주차 과제</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_box_hint">찾고 싶은 이름을 입력하세요</string>
+    <string name="get_contacts_button_string">연락처 불러오기</string>
+    <string name="clearing_button_string">목록 비우기</string>
+    <string name="name_hint_string">이름</string>
+    <string name="phone_number_hint_string">연락처(ex. 010-1234-5678)</string>
+    <string name="addition_dialog_title_string">연락처 추가</string>
+    <string name="dialog_positive_button_string">추가</string>
+    <string name="dialog_negative_button_string">취소</string>
+    <string name="edition_dialog_title_string">연락처 편집</string>
+    <string name="edition_dialog_positive_button_string">확인</string>
+    <string name="imageButton_listitem_string">프로필 사진</string>
+    <string name="action_settings">Settings</string>
+    <!-- Tab3 -->
+    <string name="contact">Contact</string>
+    <string name="gallery">Gallery</string>
+    <string name="music">Music</string>
+    <string name="clear">비우기</string>
+    <string name="red">RED</string>
+    <string name="blue">BLUE</string>
+    <string name="black">BLACK</string>
+    <string name="green">GREEN</string>
+    <string name="eraser">지우개</string>
+    <string name="custom">색상 지정</string>
+    <string name="set_color">Set Color</string>
+    <string name="option">옵션</string>
+    <string name="emboss">엠보싱</string>
+    <string name="blur">블러 효과</string>
+    <string name="normal">기본</string>
+    <string name="save">저장</string>
+    <string name="open">Open</string>
+    <string name="thickness">선 두께</string>
+</resources>
