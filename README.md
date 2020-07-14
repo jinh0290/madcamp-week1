@@ -34,5 +34,5 @@
   - 파일이름을 지정하여 휴대폰의 외부저장소에 저장하는 기능을 구현
   - 불러오기 기능을 구현하여 외부저장소에 있는 사용자가 그린 그림을 가지고 오는 것은 가능하나, 그위에다가 더 그리는 기능은 구현 안됨
   
-  
+  ![alt text](https://github.com/[chanhee015]/[madcamp-week1]/blob/[master]/bonobono.jpg?raw=true)
   
